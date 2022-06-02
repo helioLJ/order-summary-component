@@ -92,6 +92,15 @@ main {
     color: var(--Bright-blue);
     font-weight: 700;
     font-size: .9rem;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content__plan__right:hover {
+    color: var(--Bright-blue);
+    opacity: 0.5;
+    text-decoration: none;
 }
 
 .content__btns {
@@ -111,7 +120,15 @@ main {
     padding: 1rem;
     margin-bottom: 1rem;
     border: none;
-    box-shadow: hsl(245, 75%, 52%, 35%) 0px 5px 15px;}
+    box-shadow: hsl(245, 75%, 52%, 35%) 0px 5px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content__btns___payment:hover {
+    background-color: var(--Bright-blue);
+    opacity: 0.5;
+}
 
 .content__btns___cancel {
     background-color: transparent;
@@ -122,6 +139,12 @@ main {
     width: 100%;
     padding: .5rem;
     border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content__btns___cancel:hover {
+    color: var(--Dark-blue);
 }
 
 .attribution {
@@ -138,4 +161,10 @@ main {
       width: 450px;
       margin: auto;
     }
+  }
+
+  @media (max-width: 500px) {
+      body {
+          background-image: url(./images/pattern-background-mobile.svg);
+      }
   }
